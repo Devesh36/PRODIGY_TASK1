@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Prodigy Infotec Internship</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    #content {
+      margin-top: 80px; /* Adjusted margin to accommodate the fixed header */
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="content">
+    <h1>
+      Thankyou Prodigy Infotec
+    </h1>
+    <p>  
+        This is an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The navigation is in  fixed position and is  visible on all pages. Used HTML to structure the menu, CSS to style it, and JavaScript to add interactivity, such as changing the  font color of the menu when a menu item is hovered over
+    </p>
+      <p>
+        Thankyou ✌️ 
+      </p>
+  </div>
+  <script src="script.js">
+    document.addEventListener('DOMContentLoaded', function() {
+  var navbar = document.getElementById('navbar');
+  var content = document.getElementById('content');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = '#555';
+    } else {
+      navbar.style.backgroundColor = '#333';
+    }
+  });
+});
+
+  </script>
+</body>
+</html>
